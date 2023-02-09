@@ -14,6 +14,19 @@ a {
   text-decoration: none;
 }
 
+.swiper-button-prev, .swiper-button-next {
+  width: 45px;
+  height: 45px;
+  background: #EFEFEF;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.swiper-button-prev::after, .swiper-button-next::after {
+  content: "";
+}
+
 .container {
   max-width: 1220px;
   width: 100%;
@@ -534,5 +547,51 @@ nav {
 @media (max-width: 768px) {
   .pay .take__item-green {
     text-align: left;
+  }
+}
+
+.about__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  align-items: center;
+  margin-top: 40px;
+}
+@media (max-width: 768px) {
+  .about__wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+.about__text {
+  font-weight: 400;
+  font-size: clamp(1rem, 0.909rem + 0.45vw, 1.25rem);
+}
+.about__img {
+  max-width: 100%;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.portfolio__swiper {
+  margin-top: clamp(1.875rem, 1.648rem + 1.14vw, 2.5rem);
+}
+@media (max-width: 480px) {
+  .portfolio__swiper {
+    padding-bottom: 50px;
+  }
+}
+.portfolio__img {
+  max-width: 100%;
+  width: 100%;
+  border-radius: 10px;
+}
+@media (max-width: 480px) {
+  .portfolio__swiper-btns {
+    position: relative;
+    width: 60%;
+    margin: 0 auto;
+    bottom: 0;
+    left: 0;
   }
 }/*# sourceMappingURL=style.css.map */

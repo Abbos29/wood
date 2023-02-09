@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <link rel="icon" href="./img/favicon.svg">
     <link rel="stylesheet" href="./style/reset.css">
     <link rel="stylesheet" href="./style/style.css">
@@ -302,10 +303,73 @@
     </div>
 </section>
 
+<section class="about">
+    <div class="container">
+        <h2 class="section-title">О нас</h2>
+
+        <div class="about__wrapper">
+            <div class="about__content">
+                <p class="about__text">
+                    Вот уже более 15 лет мы пилим, сушим, строгаем и приносим пользу людям! Да, и делаем это с полной самоотдачей и профессионализмом!
+                    <br><br>
+                    За это время мы произвели более 25.000 заборных секций разной высоты и разных цветов.
+                    Более 500 наших покупателей благодарны нам за наш труд и наши качественные, экологичные заборы.
+                    <br><br>
+                    Мы работаем с качественным сырьем на профессиональном оборудование, что делает качество продукции заборов более высоким и надежным по сравнению с кустарным или самостоятельным изготовлением.
+                </p>
+            </div>
+
+            <img class="about__img" src="./img/about.jpg" alt="about-img">
+        </div>
+    </div>
+</section>
+
+<section class="portfolio">
+    <div class="container">
+        <h2 class="section-title">Наши работы</h2>
+
+        <!-- Slider main container -->
+        <div class="swiper portfolio__swiper">
+            <div class="swiper-wrapper portfolio__swiper-wrapper">
+                <div class="swiper-slide portfolio__swiper-slide">
+                    <img class="portfolio__img" src="./img/portfolio-1.jpg" alt="porfolio-img">
+                </div>
+
+                <div class="swiper-slide portfolio__swiper-slide">
+                    <img class="portfolio__img" src="./img/portfolio-2.jpg" alt="porfolio-img">
+                </div>
+
+                <div class="swiper-slide portfolio__swiper-slide">
+                    <img class="portfolio__img" src="./img/portfolio-3.jpg" alt="porfolio-img">
+                </div>
+
+                <div class="swiper-slide portfolio__swiper-slide">
+                    <img class="portfolio__img" src="./img/portfolio-2.jpg" alt="porfolio-img">
+                </div>
+            </div>
+
+            <div class="portfolio__swiper-btns">
+                <div class="swiper-button-prev portfolio__swiper-prev">
+                    <svg width="16" height="27" viewBox="0 0 16 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14 25L2.75338 14.222C2.34259 13.8283 2.34259 13.1717 2.75338 12.778L14 2" stroke="#3FBE6B" stroke-width="4" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <div class="swiper-button-next portfolio__swiper-next">
+                    <svg width="16" height="27" viewBox="0 0 16 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2 2L13.2466 12.778C13.6574 13.1717 13.6574 13.8283 13.2466 14.222L2 25" stroke="#3FBE6B" stroke-width="4" stroke-linecap="round"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
 </main>
 
 </body>
 
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 <script src="./script/script.js"></script>
 
 </html>
