@@ -74,3 +74,28 @@ const swiperPortfolio = new Swiper('.portfolio__swiper', {
     },
   }
 });
+
+
+const swiperReview = new Swiper('.review__swiper', {
+    slidesPerView: 1,
+    spaceBetween: 20,
+    autoHeight: true,
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  
+    // Responsive breakpoints
+    breakpoints: {
+    720: {
+      slidesPerView: 2,
+      spaceBetween: 20
+    },
+    1100: {
+      slidesPerView: 3,
+      spaceBetween: 20
+    },
+  }
+});

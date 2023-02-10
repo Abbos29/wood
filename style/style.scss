@@ -11,6 +11,8 @@ html {
     font-size: 20px;
     line-height: 1.1;
     color: #161616;
+
+    scroll-behavior: smooth;
 }
 body {
     background: #F7F7F7;
@@ -34,12 +36,22 @@ a {
     }
 }
 
-
+.swiper {
+    z-index: 0;
+}
 .container {
     max-width: 1220px;
     width: 100%;
     margin: 0 auto;
     padding: 0 20px;
+}
+.locked {
+    overflow: hidden;
+    position: relative;
+    
+    .swiper {
+        z-index: -10;
+    }
 }
 
 .btn-cost {
@@ -101,6 +113,7 @@ a {
 // HEADER
 header {
     position: fixed;
+    z-index: 10;
     top: 0;
     left: 0;
     width: 100%;
@@ -109,7 +122,10 @@ header {
 // Navbar
 nav {
     background: rgba(191, 191, 191, 0.1);
+    // background: #EFEFEF;
+    // background: rgb(242, 242, 242, 0.5);
     overflow: hidden;
+    z-index: 5;
 
 
 }
@@ -739,7 +755,7 @@ nav {
     &__img {
         max-width: 100%;
         width: 100%;
-        border-radius: 10px;
+        border-radius: 20px;
     }
     &__swiper-btns {
 
@@ -796,5 +812,253 @@ nav {
     &__item-text {
         color: #161616;
         font-size: clamp(0.875rem, 0.761rem + 0.57vw, 1.188rem);
+    }
+}
+
+
+
+
+// REVIEW
+
+.review {
+    margin-bottom: clamp(1.875rem, 1.648rem + 1.14vw, 2.5rem);
+
+
+    .benefits {
+        margin-top: 0;
+    }
+    .benefits__item-title {
+        font-size: clamp(0.875rem, 0.807rem + 0.34vw, 1.125rem);
+    }
+
+    &__green {
+        font-weight: 500;
+        background: #3FBE6B;
+        border-radius: 20px;
+        padding: clamp(0.625rem, 0.456rem + 0.85vw, 1.25rem);
+        color: #fff;
+        margin-top: 10px;
+
+        a {
+            color: #fff;
+            text-decoration: underline;
+        }
+    }
+    // .review__swiper
+    &__swiper {
+        padding-top: clamp(1.875rem, 1.42rem + 2.27vw, 3.125rem);
+        padding-bottom: 80px;
+    }
+    // .review__swiper-wrapper
+    &__swiper-wrapper {
+    }
+    // .review__swiper-slide
+    &__swiper-slide {
+    }
+    // .review__slide
+    &__slide {
+        padding: clamp(0.625rem, 0.398rem + 1.14vw, 1.25rem);
+        background: #EFEFEF;
+        border-radius: 10px;
+    }
+    // .review__slide-top
+    &__slide-top {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+    // .review__slide-img
+    &__slide-img {
+        border-radius: 999px;
+
+        max-width: 60px;
+        width: 100%;
+
+        @media (max-width: 480px) {
+            max-width: 40px;
+        }
+    }
+    // .review__slide-name
+    &__slide-name {
+        font-size: clamp(1rem, 0.966rem + 0.17vw, 1.125rem);
+    }
+    // .review__slide-text
+    &__slide-text {
+        font-weight: 400;
+        padding-top: 15px;
+        font-size: clamp(0.875rem, 0.83rem + 0.23vw, 1rem);
+        line-height: 1.15;
+    }
+    // .review__swiper-btns
+    &__swiper-btns {
+
+        @media (max-width: 1100px) {
+            position: relative;
+            width: 40%;
+            margin: 0 auto;
+            bottom: -40px;
+            left: 0;
+        }
+    }
+    // .review__swiper-prev
+    &__swiper-prev {
+    }
+    // .review__swiper-next
+    &__swiper-next {
+    }
+}
+
+
+
+
+// FORM
+
+.contact-form{
+    max-width: 100%; 
+    // min-width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: clamp(0.625rem, 0.456rem + 0.85vw, 1.25rem);
+
+    text-align: center;
+}
+input[type=text], textarea {
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(1rem, 0.898rem + 0.51vw, 1.375rem);
+    outline: none;
+    max-width: 100%;
+    padding: clamp(0.625rem, 0.489rem + 0.68vw, 1.125rem);
+    text-align: center;
+    
+    background: #F3F3F3;
+    border: 1px solid $mainColor;
+    border-radius: 10px;
+
+    transition: all .4s;
+    &::placeholder {
+        color: #9B9B9B;
+    }
+}
+input[type=text]:focus, textarea:focus {
+    transition: all .4s;
+}
+input[type=button]{
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(1rem, 0.898rem + 0.51vw, 1.375rem);
+    padding: clamp(0.625rem, 0.489rem + 0.68vw, 1.125rem);
+    background: $mainColor;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    font-weight: 700;
+    color: #fff;
+    max-width: 100%;
+}
+input[type=button]:hover{
+    color: #FFF;
+    transition: all .2s;
+}
+input[type=button]:active{
+    transition: all .4s;
+    top: 3px;
+}
+input[type=button]:focus{
+    position: relative;
+    transition: all .2s;
+    outline: none;
+}
+
+
+
+.form {
+    margin-bottom: clamp(2.5rem, 1.591rem + 4.55vw, 5rem);
+    // .form__wrapper
+    &__wrapper {
+        background: #EFEFEF;
+        border-radius: 20px;
+        padding: clamp(0.938rem, 0.71rem + 1.14vw, 1.563rem);
+
+        display: grid;
+        gap: 20px;
+        grid-template-columns: 1fr 1fr;
+
+        @media (max-width: 768px) {
+            grid-template-columns: 1fr;
+        }
+    }
+    // .form__title
+    &__title {
+        color: $mainColor;
+        font-size: clamp(1.25rem, 0.905rem + 1.72vw, 1.875rem) clamp(0.5rem, -2.969rem + 7.71vw, 2.813rem);
+    }
+    // .form__icons
+    &__icons {
+        max-width: 170px;
+        width: 100%;
+        margin: 10px auto 0;
+    }
+    // .form__icons-link
+    &__icons-link {
+        svg {
+            transition: all .3s;
+            &:hover {
+                path {
+                    fill : $mainColor;
+
+                }
+            }
+        }
+
+        path {
+            fill: #161616;
+
+            transition: all .4s;
+        }
+    }
+    // .form__map
+    &__map {
+        max-width: 100%;
+        width: 100%;
+        border-radius: 20px;
+    }
+}
+
+
+
+
+
+// FOOTER
+
+.footer {
+    padding: clamp(0.938rem, 0.369rem + 2.84vw, 2.5rem) 0;
+    background: #EFEFEF;
+
+    .logo {
+        @media (max-width: 768px) {
+            margin: 0 auto;
+        }
+
+        a {
+            color: #000;
+        }
+    }
+    // .footer__wrapper
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        align-items: center;
+
+        @media (max-width: 768px) {
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+        }
+    }
+    // .footer__text
+    &__text {
+        font-weight: 400;
+        font-size: clamp(1rem, 0.955rem + 0.23vw, 1.125rem);
     }
 }
