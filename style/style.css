@@ -10,6 +10,10 @@ html {
 body {
   background: #F7F7F7;
 }
+body.locked nav {
+  -webkit-backdrop-filter: none;
+          backdrop-filter: none;
+}
 
 a {
   text-decoration: none;
@@ -113,10 +117,6 @@ nav {
           backdrop-filter: blur(10px);
   overflow: hidden;
   z-index: 5;
-  transition: all 0.5s;
-}
-nav.fixed__nav {
-  transition: all 0.5s;
 }
 nav.fixed__nav .navbar {
   transition: all 0.5s;

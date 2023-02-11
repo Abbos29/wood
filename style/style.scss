@@ -16,6 +16,12 @@ html {
 }
 body {
     background: #F7F7F7;
+
+    &.locked {
+        nav {
+            backdrop-filter: none;
+        }
+    }
 }
 a {
     text-decoration: none;
@@ -128,11 +134,10 @@ nav {
     // background: rgb(242, 242, 242, 0.5);
     overflow: hidden;
     z-index: 5;
-    transition: all .5s;
+    // transition: all .5s;
 
 
     &.fixed__nav {
-        transition: all .5s;
 
         .navbar {
             transition: all .5s;
