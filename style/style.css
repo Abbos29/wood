@@ -104,12 +104,23 @@ header {
   top: 0;
   left: 0;
   width: 100%;
+  transition: all 0.5s;
 }
 
 nav {
   background: rgba(191, 191, 191, 0.1);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
   overflow: hidden;
   z-index: 5;
+  transition: all 0.5s;
+}
+nav.fixed__nav {
+  transition: all 0.5s;
+}
+nav.fixed__nav .navbar {
+  transition: all 0.5s;
+  padding: 10px 0;
 }
 
 .navbar {

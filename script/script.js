@@ -1,3 +1,13 @@
+
+// window.onscroll = function() {  
+//     var currentScrollPos = window.pageYOffset;  
+//     if (currentScrollPos > 0) {  
+//         document.querySelector(".navbar").classList.add("active");  
+//     } else {  
+//         document.querySelector(".navbar").classList.remove("active");  
+//     }  
+// }
+
 // Мобильное меню бургер
 function burgerMenu() {
   const burger = document.querySelector('.burger')

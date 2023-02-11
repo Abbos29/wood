@@ -117,6 +117,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
+    transition: all .5s;
 }
 
 // Navbar
@@ -127,8 +128,17 @@ nav {
     // background: rgb(242, 242, 242, 0.5);
     overflow: hidden;
     z-index: 5;
+    transition: all .5s;
 
 
+    &.fixed__nav {
+        transition: all .5s;
+
+        .navbar {
+            transition: all .5s;
+            padding: 10px 0;
+        }
+    }
 }
 
 .navbar {
