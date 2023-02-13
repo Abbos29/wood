@@ -556,11 +556,6 @@ nav {
         max-width: 100%;
         width: 100%;
         border-radius: 10px;
-
-        transition: all .3s;
-        &:focus {
-            transform: scale(1.2);
-        }
     }
     // .price__item-title
     &__item-title {
