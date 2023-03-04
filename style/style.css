@@ -196,8 +196,7 @@ nav.fixed__nav .navbar {
     justify-content: center;
     align-items: center;
     z-index: 22;
-    -webkit-animation: fade 0.1s linear;
-            animation: fade 0.1s linear;
+    animation: fade 0.1s linear;
   }
   .burger {
     display: block;
@@ -396,6 +395,12 @@ nav.fixed__nav .navbar {
   .benefits__wrapper {
     grid-template-columns: repeat(2, 1fr);
   }
+}
+.benefits__item iframe {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
 }
 .benefits__item-img {
   max-width: 100%;
@@ -647,11 +652,19 @@ nav.fixed__nav .navbar {
 .video__item-img {
   max-width: 100%;
   width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.video iframe {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
   border-radius: 10px;
 }
 .video__item-text {
   color: #161616;
-  font-size: clamp(0.875rem, 0.761rem + 0.57vw, 1.188rem);
+  font-size: clamp(0.875rem, 0.762rem + 0.48vw, 1.125rem);
+  line-height: 1;
 }
 
 .review {
@@ -739,9 +752,6 @@ input[type=text], textarea {
   transition: all 0.4s;
 }
 input[type=text]::-moz-placeholder, textarea::-moz-placeholder {
-  color: #9B9B9B;
-}
-input[type=text]:-ms-input-placeholder, textarea:-ms-input-placeholder {
   color: #9B9B9B;
 }
 input[type=text]::placeholder, textarea::placeholder {
