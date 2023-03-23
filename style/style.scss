@@ -8,7 +8,7 @@ $mainColorHover: #1e8040;
 html {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1.1;
     color: #161616;
 
@@ -154,9 +154,10 @@ nav {
     padding: clamp(0.938rem, 0.737rem + 0.94vw, 1.563rem) 0;
 
     .btn-cost {
-        max-width: 290px;
+        max-width: 260px;
         margin: 0 30px 0 auto;
         padding: 15px;
+        font-size: 18px;
 
         @media (max-width: 768px) {
             display: none;
@@ -173,7 +174,7 @@ nav {
 
 .menu {
     display: flex;
-    gap: 40px;
+    gap: 30px;
     padding: 0 20px;
 
     // .menu__item
@@ -194,6 +195,7 @@ nav {
     // .menu__item-link
     &__item-link {
         font-weight: 500;
+        font-size: clamp(0.9rem, 0.788rem + 0.44vw, 0.9rem);
         color: white;
     }
 }
@@ -336,16 +338,20 @@ nav {
 
         // display: flex;
         // justify-content: center;
+
+        @media (max-width: 480px) {
+            text-align: center;
+        }
     }
     // .hero__title
     &__title {
-        font-size: clamp(1.625rem, 1.144rem + 2.26vw, 3.125rem);
+        font-size: clamp(1.625rem, 1.144rem + 2.26vw, 2.9rem);
         line-height: 1.15;
     }
     // .hero__pretitle
     &__pretitle {
         font-weight: 500;
-        font-size: clamp(1.375rem, 1.014rem + 1.7vw, 2.5rem);
+        font-size: clamp(1.375rem, 1.014rem + 1.7vw, 2.3rem);
 
         padding-top: clamp(1.25rem, 0.849rem + 1.89vw, 2.5rem);
         padding-bottom: 20px;
@@ -353,9 +359,14 @@ nav {
     // .hero__text
     &__text {
         font-weight: 500;
-        font-size: clamp(1.125rem, 0.884rem + 1.13vw, 1.875rem);
-
+        font-size: clamp(1.125rem, 0.884rem + 1.13vw, 1.575rem);
+    }
+    &__num {
+        font-weight: 600;
+        font-size: clamp(1.125rem, 0.884rem + 1.13vw, 1.575rem);
         padding-bottom: clamp(2.5rem, 1.297rem + 5.66vw, 6.25rem);
+        padding-top: 20px;
+
     }
 }
 
@@ -394,7 +405,7 @@ nav {
     }
     // .product__content-text
     &__content-text {
-        font-size: clamp(1rem, 0.88rem + 0.57vw, 1.375rem);
+        font-size: clamp(1rem, 0.88rem + 0.57vw, 1.2rem);
     }
     // .product__content-inner
     &__content-inner {
@@ -411,7 +422,7 @@ nav {
     }
     // .product__content-item
     &__content-item {
-        font-size: clamp(1rem, 0.88rem + 0.57vw, 1.375rem);
+        font-size: clamp(1rem, 0.88rem + 0.57vw, 1.3rem);
         // color: #fff;
         padding: 10px;
         border-radius: 10px;
@@ -438,7 +449,7 @@ nav {
         border: 1px solid $mainColor;
         border-radius: 10px;
 
-        font-size: clamp(0.75rem, 0.55rem + 0.94vw, 1.375rem);
+        font-size: clamp(0.75rem, 0.55rem + 0.94vw, 1.175rem);
 
         display: flex;
         align-items: center;
@@ -463,6 +474,7 @@ nav {
 .item-white {
     background: #F9F9F9;
     color: #161616;
+    border: 1px solid rgba(0, 0, 0, 0.6);
 }
 
 .benefits {
@@ -681,7 +693,7 @@ nav {
         p {
             font-weight: 600;
             line-height: 1.1;
-            font-size: clamp(0.875rem, 0.706rem + 0.85vw, 1.5rem);
+            font-size: clamp(0.875rem, 0.706rem + 0.85vw, 1.3rem);
         }
     }
 }
@@ -750,7 +762,7 @@ nav {
     // .about__text
     &__text {
         font-weight: 400;
-        font-size: clamp(1rem, 0.909rem + 0.45vw, 1.25rem);
+        font-size: clamp(0.6rem, 0.709rem + 0.45vw, 1.25rem);
     }
     // .about__img
     &__img {
@@ -910,11 +922,17 @@ nav {
     &__slide-img {
         border-radius: 999px;
 
-        max-width: 60px;
-        width: 100%;
+        min-width: 60px;
+        min-height: 60px;
+        width: 60px;
+        height: 60px;
+        object-fit: cover;
 
         @media (max-width: 480px) {
-            max-width: 40px;
+            min-width: 50px;
+            min-height: 50px;
+            width: 50px;
+            height: 50px;
         }
     }
     // .review__slide-name
@@ -964,7 +982,7 @@ nav {
 input[type=text], textarea {
     font-weight: 400;
     font-family: 'Montserrat', sans-serif;
-    font-size: clamp(1rem, 0.898rem + 0.51vw, 1.375rem);
+    font-size: clamp(1rem, 0.898rem + 0.51vw, 1.175rem);
     outline: none;
     max-width: 100%;
     padding: clamp(0.625rem, 0.489rem + 0.68vw, 1.125rem);
@@ -984,7 +1002,7 @@ input[type=text]:focus, textarea:focus {
 }
 input[type=button]{
     font-family: 'Montserrat', sans-serif;
-    font-size: clamp(1rem, 0.898rem + 0.51vw, 1.375rem);
+    font-size: clamp(1rem, 0.898rem + 0.51vw, 1.175rem);
     padding: clamp(0.625rem, 0.489rem + 0.68vw, 1.125rem);
     background: $mainColor;
     border: none;
@@ -1029,30 +1047,53 @@ input[type=button]:focus{
     // .form__title
     &__title {
         color: $mainColor;
-        font-size: clamp(1.25rem, 0.905rem + 1.72vw, 1.875rem) clamp(0.5rem, -2.969rem + 7.71vw, 2.813rem);
+        font-size: clamp(1.25rem, 0.905rem + 1.72vw, 1.675rem);
     }
     // .form__icons
     &__icons {
-        max-width: 170px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px 20px;
+        max-width: 100%;
         width: 100%;
-        margin: 10px auto 0;
+        
+        @media (max-width: 968px) {
+            display: flex;
+            max-width: 170px;
+            margin: 10px auto 0;
+            gap: 18px;
+        }
     }
     // .form__icons-link
     &__icons-link {
-        svg {
-            transition: all .3s;
-            &:hover {
-                path {
-                    fill : $mainColor;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 15px;
+        color: #000;
+        font-size: 20px;
+        transition: all .3s;
 
-                }
+        &:hover {
+            color: $mainColor;
+            path {
+                fill : $mainColor;
+
             }
         }
-
+        svg {
+            transition: all .3s;
+        }
         path {
             fill: #161616;
 
             transition: all .4s;
+        }
+
+        @media (max-width: 968px) {
+            p {
+                display: none;
+            }
         }
     }
     // .form__map
@@ -1104,5 +1145,16 @@ input[type=button]:focus{
     &__text {
         font-weight: 400;
         font-size: clamp(1rem, 0.955rem + 0.23vw, 1.125rem);
+    }
+}
+
+
+.fancybox__content {
+    width: 700px !important;
+    height: auto !important;
+    
+    img {
+        border-radius: 40px !important;
+        object-fit: fill !important;
     }
 }

@@ -109,3 +109,41 @@ const swiperReview = new Swiper('.review__swiper', {
     },
   }
 });
+
+
+
+// Fancybox
+
+Fancybox.bind("[data-fancybox]", {
+    Toolbar: {
+        display: {
+        left: ["infobar"],
+        middle: [
+            "zoomIn",
+            "zoomOut",
+            "toggle1to1",
+            "rotateCCW",
+            "rotateCW",
+            "flipX",
+            "flipY",
+        ],
+        right: ["slideshow", "thumbs", "close"],
+        },
+    },
+});
+
+// $(document).ready(function() {
+//     $('[data-fancybox]').fancybox({
+//         toolbar: true,
+//         buttons: [
+//             'zoom',
+//             'toggleZoom',
+//             'fullScreen',
+//             'slideShow',
+//             'fullScreen',
+//             'thumbs',
+//             'close'
+//         ]
+//     });
+// });
+
