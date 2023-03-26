@@ -23,6 +23,11 @@ body {
         }
     }
 }
+.body-2 {
+    background: #3fbe6ba9;
+    height: 100vh;
+    
+}
 a {
     text-decoration: none;
 }
@@ -1117,7 +1122,6 @@ input[type=button]:focus{
 
 
 
-
 // FOOTER
 
 .footer {
@@ -1152,6 +1156,44 @@ input[type=button]:focus{
         font-size: clamp(1rem, 0.955rem + 0.23vw, 1.125rem);
     }
 }
+
+
+
+// Thanks 
+
+.thanks {
+    padding: 250px 0;
+    // .thanks__wrapper
+    &__wrapper {
+        max-width: 600px;
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 30px;
+        padding: 30px 15px;
+        background: #FFFFFF;
+        border-radius: 20px;
+    }
+    // .thanks__title
+    &__title {
+        font-weight: 700;
+        font-size: 30px;
+        text-align: center;
+        color: #000;
+        padding-top: 15px;
+    }
+    // .thanks__text
+    &__text {
+        font-weight: 600;
+        font-size: 24px;
+        text-align: center;
+        color: #000;
+    }
+}
+
 
 
 .fancybox__content {
