@@ -633,7 +633,13 @@ nav.fixed__nav .navbar {
 .portfolio__img {
   max-width: 100%;
   width: 100%;
+  height: 380px;
   border-radius: 20px;
+}
+@media (max-width: 1200px) {
+  .portfolio__img {
+    height: 300px;
+  }
 }
 @media (max-width: 480px) {
   .portfolio__swiper-btns {
