@@ -336,6 +336,7 @@ nav {
     &__wrapper {
         max-width: 910px;
         width: 100%;
+        color: #fafafa;
 
         // max-height: clamp(37.5rem, 31.285rem + 29.25vw, 56.875rem);
         // height: 100%;
@@ -371,7 +372,11 @@ nav {
         font-size: clamp(1.125rem, 0.884rem + 1.13vw, 1.575rem);
         padding-bottom: clamp(2.5rem, 1.297rem + 5.66vw, 6.25rem);
         padding-top: 20px;
+        color: #fafafa;
 
+        span {
+            color: #fafafa;
+        }
     }
 }
 
@@ -842,6 +847,9 @@ nav {
 
         @media (max-width: 768px) {
             grid-template-columns: repeat(2, 1fr);
+        }
+        @media (max-width: 480px) {
+            grid-template-columns: 1fr;
         }
     }
     // .video__item

@@ -277,6 +277,7 @@ nav.fixed__nav .navbar {
 .hero__wrapper {
   max-width: 910px;
   width: 100%;
+  color: #fafafa;
 }
 @media (max-width: 480px) {
   .hero__wrapper {
@@ -302,6 +303,10 @@ nav.fixed__nav .navbar {
   font-size: clamp(1.125rem, 0.884rem + 1.13vw, 1.575rem);
   padding-bottom: clamp(2.5rem, 1.297rem + 5.66vw, 6.25rem);
   padding-top: 20px;
+  color: #fafafa;
+}
+.hero__num span {
+  color: #fafafa;
 }
 
 .product__wrapper {
@@ -664,6 +669,11 @@ nav.fixed__nav .navbar {
 @media (max-width: 768px) {
   .video__wrapper {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 480px) {
+  .video__wrapper {
+    grid-template-columns: 1fr;
   }
 }
 .video__item-box {
