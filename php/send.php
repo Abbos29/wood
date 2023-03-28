@@ -25,7 +25,7 @@ $sendToTelegram2 = fopen("https://api.telegram.org/bot{$token}/sendMessage?chat_
 if ($sendToTelegram) {
 
   ob_start();
-  $new_url = 'thanks.html';
+  $new_url = '../thanks.html';
   header('Location: ' . $new_url);
   ob_end_flush();
 } else {
