@@ -272,6 +272,9 @@ nav.fixed__nav .navbar {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.hero .btn-cost {
+  max-width: 380px;
+}
 .hero .container {
   max-height: clamp(37.5rem, 31.285rem + 29.25vw, 56.875rem);
   height: 100%;
