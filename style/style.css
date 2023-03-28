@@ -963,9 +963,15 @@ input[type=button]:focus {
 }
 .thanks__text {
   font-weight: 600;
-  font-size: 24px;
+  font-size: 22px;
   text-align: center;
   color: #000;
+}
+.thanks__back {
+  font-weight: 600;
+  font-size: 24px;
+  text-align: center;
+  text-decoration: underline;
 }
 
 .fancybox__content {
