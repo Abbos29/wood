@@ -644,12 +644,12 @@
 <section class="form" id="form">
     <div class="container">
         <div class="form__wrapper">
-            <form class="contact-form" id="contact-form">
+            <form class="contact-form" id="contact-form" method="post" action="/php/amo.php">
                 <p class="form__title">Заполните форму, и мы перезвоним!</p>
 
-                <input type="text" placeholder="Как к вам обращаться?"/>
+                <input type="text" name="name" id="name" placeholder="Как к вам обращаться?" required/>
 
-                <input type="text" placeholder="8 123 456 78 90"/>
+                <input type="text" name="phone" id="phone" placeholder="8 123 456 78 90" required/>
 
                 <input type="button" value="Рассчитать стоимость" class="btn-cost"/>
 
