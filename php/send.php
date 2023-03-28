@@ -8,7 +8,8 @@ $token = "6040481645:AAEhWyfZpa_RtBQ6f16_ysgPAt3fcVJlHb0";
 
 $chat_id = "1338691940";
 $chat_id2 = "1300143664";
-$chat_id3 = "648170081";
+$chat_id3 = "2115232569";
+$chat_id4 = "648170081";
 
 $arr = array(
   'Имя пользователя: ' => $name,
@@ -22,6 +23,7 @@ foreach ($arr as $key => $value) {
 $sendToTelegram = fopen("https://api.telegram.org/bot{$token}/sendMessage?chat_id={$chat_id}&parse_mode=html&text={$txt}", "r");
 $sendToTelegram2 = fopen("https://api.telegram.org/bot{$token}/sendMessage?chat_id={$chat_id2}&parse_mode=html&text={$txt}", "r");
 $sendToTelegram3 = fopen("https://api.telegram.org/bot{$token}/sendMessage?chat_id={$chat_id3}&parse_mode=html&text={$txt}", "r");
+$sendToTelegram4 = fopen("https://api.telegram.org/bot{$token}/sendMessage?chat_id={$chat_id4}&parse_mode=html&text={$txt}", "r");
 
 
 if ($sendToTelegram) {
