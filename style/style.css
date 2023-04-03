@@ -479,7 +479,14 @@ nav.fixed__nav .navbar {
 .price__item-img {
   max-width: 100%;
   width: 100%;
+  max-height: 300px;
+  height: 100%;
   border-radius: 10px;
+}
+@media (max-width: 480px) {
+  .price__item-img {
+    max-height: 190px;
+  }
 }
 .price__item-title {
   margin: 15px 0 10px;
@@ -624,7 +631,10 @@ nav.fixed__nav .navbar {
 }
 .about__text {
   font-weight: 400;
-  font-size: clamp(0.6rem, 0.709rem + 0.45vw, 1.25rem);
+  font-size: clamp(0.6rem, 0.6rem + 0.45vw, 1.25rem);
+}
+.about__text span {
+  font-weight: 600;
 }
 .about__img {
   max-width: 100%;
