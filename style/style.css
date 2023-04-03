@@ -674,6 +674,7 @@ nav.fixed__nav .navbar {
 .video__wrapper {
   margin-top: clamp(1.875rem, 1.42rem + 2.27vw, 3.125rem);
   display: grid;
+  grid-auto-columns: 1fr;
   grid-template-columns: repeat(4, 1fr);
   gap: clamp(0.625rem, 0.398rem + 1.14vw, 1.25rem);
 }
